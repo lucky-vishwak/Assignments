@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <span>Products</span>
+                <!-- <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt="MDB Logo"
+                    loading="lazy" style="margin-top: -1px;" /> -->
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Dashboard</a>
+                    </li> -->
+                </ul>
+                <!-- Left links -->
+                <div class="d-flex align-items-center">
+
+                    <button type="button" class="btn btn-primary me-3">
+                        Add Products
+                    </button>
+                    <button type="button" class="btn btn-primary me-3" onclick="cases()">
+                        Analysis
+                    </button>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <!-- d-flex justify-content-center row row-cols-lg-5 row-cols-md-3 my-3  -->
+    <div class="conainer">
+        <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 my-4" id="hai">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="card-title">Add Product</h4>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form1Example1" class="form-control" />
+                          <label class="form-label" for="form1Example1">Product Name</label>
+                        </div>
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="number" id="form1Example2" class="form-control" />
+                          <label class="form-label" for="form1Example2">price</label>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <input type="number" id="form1Example2" class="form-control" />
+                            <label class="form-label" for="form1Example2">Discount</label>
+                          </div>
+                        <div class="col-12">
+                            <label class="" for="inlineFormSelectPref">Category</label>
+                            <select class="select form-control">
+                              <option value="1">Food</option>
+                              <option value="2">SmartPhones</option>
+                              <option value="3">Electronics</option>
+                              <option value="4">Education</option>
+                              <option value="5">Opticales</option>
+                            </select>
+                          </div>
+                          <div class="col-12 my-2">
+                            <label class="" for="inlineFormSelectPref">Sub-Category</label>
+                            <select class="select form-control" >
+                              <option value="1">Book</option>
+                              <option value="2">Medical</option>
+                              <option value="3">Law</option>
+                              <option value="4">Education</option>
+                              <option value="5">Opticales</option>
+                            </select>
+                          </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary my-4">Add product</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    </div>
+
+
+    <script src="products.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
